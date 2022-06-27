@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Quiz Type Beat</title>
+</head>
+
+<body>
+    <div id="start">
+        <h1 id="opening">Coding Quiz Challenge</h1>
+        <p id="opeingP">This coding quiz will test to see how much you truly know about HTML, CSS, and Javascript. Thit
+            will go over the basic levels of understanding the concepts. Shouldn't be too hard so don't suck. Keep
+            retrying to attempt to achieve a perfect score.</p>
+        <button id="goOval">Start</button>
+    </div>
+
+
+
+    <h1 id="time"></h1>
+    <div id="question1" class="hidden">
+        <h1 class="questions">CSS is prodominantley used for:</h1>
+        <ul class="qs1">
+            <button onclick="questionCheck1(false)" class="options">organizing Javascript</button>
+            <button onclick="questionCheck1(false)" class="options">used as a database</button>
+            <button onclick="questionCheck1(true)" class="options">styling</button>
+            <button onclick="questionCheck1(false)" class="options">None of the above</button>
+        </ul>
+    </div>
+
+    <div id="question2" class="hidden">
+        <h1 class="questions">When looking to style using Javascript, which functionality should be used to achieve this
+            desire?</h1>
+        <ul class="qs1">
+            <button onclick="questionCheck2(false)" class="options">event.target</button>
+            <button onclick="questionCheck2(false)" class="options">addEventListener</button>
+            <button onclick="questionCheck2(false)" class="options">setInterval</button>
+            <button onclick="questionCheck2(true)" class="options">setAttribute</button>
+        </ul>
+    </div>
+
+    <div id="question3" class="hidden">
+        <h1 class="questions">Which best describes the term key-up?</h1>
+        <ul class="qs1">
+            <button onclick="questionCheck3(true)" class="options">User has to lift off of the key they pressed for the
+                next value to be taken in</button>
+            <button onclick="questionCheck3(false)" class="options">Copy and pastes the last line of code by pressing
+                the up key</button>
+            <button onclick="questionCheck3(false)" class="options">copying a variable for later use</button>
+            <button onclick="questionCheck3(false)" class="options">double checking for bugs</button>
+        </ul>
+    </div>
+
+    <div id="question4" class="hidden">
+        <h1 class="questions">Which of the following is the HTML commonly referred to as</h1>
+        <ul class="qs1">
+            <button onclick="questionCheck4(false)" class="options">The head of JS</button>
+            <button onclick="questionCheck4(true)" class="options">the skeleton</button>
+            <button onclick="questionCheck4(false)" class="options">the eyes</button>
+            <button onclick="questionCheck4(false)" class="options">the middle</button>
+        </ul>
+    </div>
+
+    <div id="question5" class="hidden">
+        <h1 class="questions">Where is the Javascript script tag placed in the HTML?</h1>
+        <ul class="qs1">
+            <button onclick="questionCheck5(false)" class="options">The head</button>
+            <button onclick="questionCheck5(false)" class="options">The footer</button>
+            <button onclick="questionCheck5(false)" class="options">the beginning of the body</button>
+            <button onclick="questionCheck5(true)" class="options">the end of the body</button>
+        </ul>
+    </div>
+
+
+    <section id="gameOver" class="hidden">
+<nav id="hs-nav"><a id="highscores" href="./Highscores-assets/index.html">View Highscores</a></nav>
+        <h1>Game Over!</h1>
+        <p id="endingP"></p>
+        <div class="endingP1">
+            <p>Type in your initials!</p>
+        </div>
+        <form id="form">
+            <div id="initials">
+                <input type="text" id="name">
+            </div>
+            <div id="score">
+            </div>
+            <button id="submit">Submit</button>
+        </form>
+        
+
+
+    </section>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
